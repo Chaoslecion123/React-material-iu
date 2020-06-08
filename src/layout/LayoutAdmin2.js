@@ -122,7 +122,6 @@ export default function LayoutAdmin2(props) {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
   const { user, isLoading } = useAuth();
-  console.log(props);
 
   const [openDrawerDerecha,setDrawerDerecha] = useState({
       right:false

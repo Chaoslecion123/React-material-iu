@@ -29,7 +29,7 @@ const style = {
 
 const Register = () => {
     const [form,setForm] = useState({})
-    const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+    const { enqueueSnackbar } = useSnackbar();
 
     const handleInput = (e) => {
         setForm({

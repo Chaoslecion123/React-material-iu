@@ -8,30 +8,30 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 export default function FormDialog(props) {
-    console.log(props)
     const {isVisibleModal,setIsVisibleModal,modalContent,modalTitle} = props;
 
     const handleClose = () => {
-        setIsVisibleModal(false);
+      setIsVisibleModal(false);
     };
+
  
   return (
     <div>
       <Dialog open={isVisibleModal} onClose={handleClose} aria-labelledby="form-dialog-title">
-  <     DialogTitle id="form-dialog-title">{modalTitle}</DialogTitle>
+        <DialogTitle id="form-dialog-title">{modalTitle}</DialogTitle>
         <DialogContent>
           <DialogContentText>
             {modalContent}
           </DialogContentText>
         </DialogContent>
-        <DialogActions>
+        {/* <DialogActions>
           <Button onClick={handleClose} color="primary">
             Cancel
           </Button>
           <Button onClick={handleClose} color="primary">
             Subscribe
           </Button>
-        </DialogActions>
+        </DialogActions> */}
       </Dialog>
     </div>
   );
